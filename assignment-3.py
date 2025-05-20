@@ -5,6 +5,7 @@ import time
 bridge = webdriver.Chrome()
 bridge.get("https://the-internet.herokuapp.com/upload")
 bridge.implicitly_wait(10)
+bridge.maximize_window()
 
 upload = bridge.find_element(By.ID, 'file-upload')
 upload.send_keys("C:\\Users\\chara\\Downloads\\hall_ticket (1).pdf")
